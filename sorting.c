@@ -19,6 +19,7 @@ void selection_sorting(int* arr,int size){
     }
 }
 
+
 void bubble_sorte(int* arr,int size){
     for (int i = size-1; i >= 1; i--){
         bool is_sorted = true;
@@ -29,6 +30,20 @@ void bubble_sorte(int* arr,int size){
             }
         } 
         if (is_sorted) return;  
+    }
+    
+}
+
+
+void insertion_sorting(int* arr,int size){
+
+        for (int i = 1; i < size; i++){ 
+            int next = arr[i];
+        int j;
+        for (j = i-1; j >=0 && arr[j]>next; j--){
+            arr[j+1] = arr[j];
+        } 
+        arr[j+1]=next;
     }
     
 }

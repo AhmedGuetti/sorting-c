@@ -14,7 +14,8 @@ int main(){
     int size = sizeof(arr)/sizeof(arr[0]);
     //selection_sorting(arr,size);
     //swap(arr,0,10);
-    bubble_sorte(arr,size);
+    //bubble_sorte(arr,size);
+    insertion_sorting(arr,size);
     printarr(arr,size);
 
 
