@@ -1,7 +1,7 @@
 #/***           Makefile                ***/
 
 
-main: main.o soritng.o
+main: main.o sorting.o
 	gcc main.o sorting.o -o main
 
 
