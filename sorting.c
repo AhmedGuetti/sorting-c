@@ -96,3 +96,35 @@ void merge_sorting(int* arr,int l,int r){
     
 
 }
+
+
+
+int q_partion(int* arr,int l,int r){
+    int p = arr[l];
+    int m = l;
+
+
+    for (int i = l+1; i <= r; i++)
+    {
+        if(arr[i]<p){
+            m++;
+            swap(arr,i,m);
+        }
+        else{
+        }
+    }
+
+    swap(arr,l,m);
+    return m;
+
+}
+
+
+void quick_sorting(int* arr,int l,int r){
+    if(l<r){
+        int pv = q_partion(arr,l,r);
+        quick_sorting(arr,l,pv-1);
+        quick_sorting(arr,pv+1,r);
+    }
+
+}

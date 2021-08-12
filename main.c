@@ -17,7 +17,8 @@ int main(){
     //swap(arr,0,10);
     //bubble_sorte(arr,size);
     //insertion_sorting(arr,size);
-    merge_sorting(arr,0,size+1);
+    //merge_sorting(arr,0,size+1);
+    quick_sorting(arr,0,size+1);
     printarr(arr,size);
 
 
